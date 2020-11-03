@@ -35,11 +35,16 @@ jobs:
     - run: npm run build
     - run: ls
     - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
-    - run: cd adui-icon
-    - run: ls
-    - run: npm publish --access public
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    - run: |
+            cd adui-icon
+            ls
+            - run: npm publish --access public
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+#     - run: ls
+#     - run: npm publish --access public
+#       env:
+#         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 #     - run: yarn build
 #     - name: GitHub Pages
 #       uses: crazy-max/ghaction-github-pages@v1.2.5
