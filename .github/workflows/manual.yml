@@ -22,16 +22,6 @@ jobs:
       env:
         FIGMA_FILE_URL: ${{ secrets.FIGMA_FILE_URL }}
         FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
-#     - name: Pushes to another repository
-#       uses: cpina/github-action-push-to-another-repository@master
-#       env:
-#         API_TOKEN_GITHUB: ${{ secrets.GH_TOKEN }}
-#       with:
-#         source-directory: 'src/svg'
-#         destination-github-username: ${{ secrets.AUTHOR }}
-#         destination-repository-name: ${{ secrets.REPO }}
-#         user-email: ${{ secrets.MAIL }}
-#         target-branch: 'main'
     - run: npm run build
     - run: ls
     - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
@@ -40,6 +30,17 @@ jobs:
             npm publish --access public
     env:
       NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+    
+    - name: Pushes to another repository
+      uses: cpina/github-action-push-to-another-repository@master
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.GH_TOKEN }}
+      with:
+        source-directory: 'src/svg'
+        destination-github-username: ${{ secrets.AUTHOR }}
+        destination-repository-name: ${{ secrets.REPO }}
+        user-email: ${{ secrets.MAIL }}
+        target-branch: 'main'
 #     - run: ls
 #     - run: npm publish --access public
 #       env:
