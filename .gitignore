@@ -1,5 +1,7 @@
 # Logs
 logs
+adui-icon
+src/svg
 *.log
 npm-debug.log*
 yarn-debug.log*
