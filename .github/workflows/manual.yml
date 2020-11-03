@@ -35,7 +35,7 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.GH_TOKEN }}
       with:
-        source-directory: '/'
+        source-directory: '/src'
         destination-github-username: ${{ secrets.AUTHOR }}
         destination-repository-name: ${{ secrets.REPO }}
         user-email: ${{ secrets.MAIL }}
