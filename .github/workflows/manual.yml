@@ -33,7 +33,7 @@ jobs:
         user-email: ${{ secrets.MAIL }}
         target-branch: 'main'
     - run: npm run build
-    - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" > ~/.npmrc
+    - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
     - run: cd adui-icon
     - run: npm publish
       env:
