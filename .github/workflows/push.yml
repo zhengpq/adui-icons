@@ -3,6 +3,7 @@ on:
   push:
     branches:
     - main
+    - master
     # file paths to consider in the event. Optional; defaults to all.
     paths:
       - package.json
