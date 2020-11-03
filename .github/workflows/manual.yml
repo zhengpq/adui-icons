@@ -37,10 +37,9 @@ jobs:
     - run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
     - run: |
             cd adui-icon
-            ls
-            - run: npm publish --access public
-              env:
-                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+            npm publish --access public
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 #     - run: ls
 #     - run: npm publish --access public
 #       env:
