@@ -28,8 +28,8 @@ jobs:
     - run: |
             cd adui-icon
             npm publish --access public
-    env:
-      NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+            env:
+              NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     - name: Pushes to another repository
       uses: cpina/github-action-push-to-another-repository@master
       env:
