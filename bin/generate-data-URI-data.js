@@ -27,7 +27,7 @@ const generateDataURIData = () => {
       if (fileContent.includes('\n')) {
         fileContent = fileContent.replace(/\n/g, '')
       }
-      fileContent = svgToBg(fileContent)
+      fileContent = `data:image/svg+xml,${svgToBg(fileContent)}`
       data[fileName.split('.svg')[0]] = fileContent.split(defaultColor)
     }
   })

@@ -147,7 +147,7 @@ client
                     options.format,
                     `${componentName}.${options.format}`
                   ),
-                  response.body.includes(`fill-opacity="0.58"`) ? response.body.replace(`fill-opacity="0.58"`, '') : response.body,
+                  response.body.includes(`fill-opacity="0.58"`) ? response.body.replace(/fill-opacity="0\.58"/g, '') : response.body,
                   options.format === 'svg' ? 'utf8' : 'binary'
                 )
               })
