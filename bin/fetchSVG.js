@@ -98,13 +98,14 @@ client
   .then((components) => {
     const componentsNew = {}
     for (const key in components) {
+      components[key].name.replace(/' '/g, '')
       const item = components[key]
-      const nameNew = item.name.replace(' ', '')
+      const nameNew = item.name
       const nameSpices = nameNew.split('/')
       item.name = nameSpices[nameSpices.length - 1]
       nameSpices.splice(nameSpices.length - 1, 1)
       item.category = nameSpices
-      componentsNew[components[key].name] = {...components[key]}
+      componentsNew[item.name] = {...item}
     }
     return ensureDir(join(options.outputDir))
       .then(() =>
