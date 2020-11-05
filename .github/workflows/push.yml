@@ -22,6 +22,7 @@ jobs:
       env:
         FIGMA_FILE_URL: ${{ secrets.FIGMA_FILE_URL }}
         FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
+        ADUI_ID: ${{secrets.ADUI_ID}}
     - run: npm run build
     - run: ls
     - run: echo "${{ github.event.head_commit.message }} ${{ secrets.AUTHOR }} ${{ secrets.REPO }} ${{ secrets.MAIL }}======================================"
