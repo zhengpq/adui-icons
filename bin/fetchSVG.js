@@ -41,10 +41,10 @@ if (!fileId) {
 
 console.log(`Exporting ${FIGMA_FILE_URL} components`)
 client
-  .file(fileId)
-
+  .file(fileId, {ids: ['44:124']})
   .then(({ data }) => {
     console.log('Processing response')
+    console.log('pakizheng', data)
     const components = {}
 
     function check(c) {
