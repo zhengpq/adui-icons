@@ -1,4 +1,4 @@
-name: icon-
+name: icon-push
 on:
   push:
     branches:
