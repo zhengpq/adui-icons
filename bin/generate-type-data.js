@@ -37,7 +37,7 @@ const generateTypeData = () => {
       if (icons[icon].category.includes(key)) {
         types[key].data.push({
           name: icon,
-          keywords: icons[icon].description.split(',')
+          keywords: [icon, ...icons[icon].description.split(',')]
         })
       }
     }
