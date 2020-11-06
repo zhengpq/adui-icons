@@ -1,6 +1,6 @@
 name: icon-manual
 on:
-  push:
+  workflow_dispatch:
     branches:
     - master
     # file paths to consider in the event. Optional; defaults to all.

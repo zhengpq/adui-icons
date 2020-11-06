@@ -1,4 +1,4 @@
-name: icon-manual
+name: icon-push
 on:
   push:
     branches:
