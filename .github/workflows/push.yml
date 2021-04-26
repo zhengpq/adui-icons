@@ -31,7 +31,7 @@ jobs:
             cd adui-icon
             npm publish --access public
     - name: Pushes to another repository
-      uses: cpina/github-action-push-to-another-repository@master
+      uses: cpina/github-action-push-to-another-repository@main
       env:
         API_TOKEN_GITHUB: ${{ secrets.GH_TOKEN }}
       with:
