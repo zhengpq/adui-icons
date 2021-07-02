@@ -37,7 +37,7 @@ jobs:
     - run: git config --global user.name "zhengpq"
     - run: git add .
     - run: git commit -m 'push content'
-    - run: git push
+    - run: git push origin HEAD:master
     # - name: Pushes to another repository
     #   uses: cpina/github-action-push-to-another-repository@master
     #   env:
