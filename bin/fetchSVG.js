@@ -4,9 +4,10 @@ const { join, resolve } = require('path')
 const Figma = require('figma-js')
 const PQueue = require('p-queue')
 require('dotenv').config()
-const { FIGMA_TOKEN, FIGMA_FILE_URL, ADUI_ID} = process.env
-// const FIGMA_TOKEN = '137867-237b6948-8462-4510-be5b-bee09a85c7cc'
-// const FIGMA_FILE_URL = 'https://www.figma.com/file/PFuQDWtYvTBqy4wSz7tzTB/AD-UI-%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80?node-id=40%3A5'
+// const { FIGMA_TOKEN, FIGMA_FILE_URL, ADUI_ID} = process.env
+const FIGMA_TOKEN = '137867-237b6948-8462-4510-be5b-bee09a85c7cc'
+const FIGMA_FILE_URL = 'https://www.figma.com/file/PFuQDWtYvTBqy4wSz7tzTB/AD-UI-%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80?node-id=40%3A5'
+const ADUI_ID = '44:124'
 
 const options = {
   format: 'svg',
@@ -34,6 +35,7 @@ let fileId = null
 if (!fileId) {
   try {
     fileId = FIGMA_FILE_URL.match(/file\/([a-z0-9]+)\//i)[1]
+    console.log('paki 333', fileId)
   } catch (e) {
     throw Error('Cannot find FIGMA_FILE_URL key in process!')
   }

@@ -49,18 +49,6 @@ function buildTs() {
     .pipe(dest('adui-icon/lib'))
 }
 
-// // 编译ts文件
-// function buildTs() {
-//   return src(['src/data/**/**.ts'], { base: 'src' })
-//     .pipe(plumber())
-//     .pipe(
-//       ts({
-//         declaration: true,
-//       })
-//     )
-//     .pipe(dest('adui-icon/src'))
-// }
-
 // 编译数据文件
 function buildData() {
   return src(['src/data/**/**.js', 'index.js'], { base: 'src' })
