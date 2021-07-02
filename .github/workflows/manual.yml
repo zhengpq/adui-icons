@@ -34,9 +34,9 @@ jobs:
       #       cd adui-icon
       #       npm publish --access public
     - name: git push
-      run: git add .
-      run: git commit 'push content'
-      run: git push
+    - run: git add .
+    - run: git commit 'push content'
+    - run: git push
     # - name: Pushes to another repository
     #   uses: cpina/github-action-push-to-another-repository@master
     #   env:
