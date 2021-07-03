@@ -28,7 +28,7 @@ const generateDataURIData = () => {
         fileContent = fileContent.replace(/\n/g, '')
       }
       fileContent = `data:image/svg+xml,${svgToBg(fileContent)}`
-      data[fileName.split('.svg')[0]] = fileContent.split(defaultColor)
+      data[fileName.split('.svg')[0].trim()] = fileContent.split(defaultColor)
     }
   })
   const content = `export default ${JSON.stringify(data)}`

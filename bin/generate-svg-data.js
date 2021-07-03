@@ -12,7 +12,7 @@ const generateSVGData = () => {
       if (fileContent.includes('\n')) {
         fileContent = fileContent.replace(/\n/g, '')
       }
-      data[fileName.split('.svg')[0]] = fileContent.split(defaultColor)
+      data[fileName.split('.svg')[0].trim()] = fileContent.split(defaultColor)
     }
   })
   const content = `export default ${JSON.stringify(data)}`

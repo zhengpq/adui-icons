@@ -17,7 +17,7 @@ const generatePathData = (files) => {
     }
     const paths = fileContent.match(/ d="[^"]+"/g) || []
     const pathStrings = paths.map(s => s.slice(3))
-    result.push(`    '${file.split('.svg')[0]}': [${pathStrings.join(", ")}],`)
+    result.push(`    '${file.split('.svg')[0].trim()}': [${pathStrings.join(", ")}],`)
     const content = `
     export default {
       ${result.join('\n')}
