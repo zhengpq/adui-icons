@@ -1,6 +1,7 @@
 
   export interface IIconNames {
-      "add-circle-dotlined": string;
+      "add-circle-dotlined-test": string;
+  "add-circle-dotlined": string;
   "add-circle-outlined": string;
   "add-circle": string;
   "add-group": string;
