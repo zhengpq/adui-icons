@@ -12,7 +12,7 @@ jobs:
     name: figma icon automation
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
 
     - uses: actions/setup-node@v1
       with:
@@ -33,11 +33,12 @@ jobs:
       # run: |
       #       cd adui-icon
       #       npm publish --access public
-    - run: git config --global user.email "@users.noreply.github.com"
-    - run: git config --global user.name "zhengpq"
-    - run: git add -A
-    - run: git commit -m 'push content'
-    - run: git push origin HEAD:master
+    - run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+        git add .
+        git commit -m 'push content'
+        git push origin master
     # - name: Pushes to another repository
     #   uses: cpina/github-action-push-to-another-repository@master
     #   env:
