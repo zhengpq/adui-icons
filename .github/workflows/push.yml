@@ -23,6 +23,7 @@ jobs:
         FIGMA_FILE_URL: ${{ secrets.FIGMA_FILE_URL }}
         FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
         ADUI_ID: ${{secrets.ADUI_ID}}
+        INPUT_TOKEN: ''
       run: |
         npm install
         npm run fetch
