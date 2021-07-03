@@ -11,12 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
     - uses: actions/setup-node@v1
       with:
         node-version: '10.x'
+    - uses: JS-DevTools/npm-publish@v1
+      with:
+        token: ${{ secrets.NPM_TOKEN }}
     - name: figma icon
       if: ${{ github.event.head_commit.message != 'push content' }}
       env:
