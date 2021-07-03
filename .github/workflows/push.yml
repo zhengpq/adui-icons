@@ -14,9 +14,6 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '10.x'
-    - uses: JS-DevTools/npm-publish@v1
-      with:
-        token: ${{ secrets.NPM_TOKEN }}
     - name: figma icon
       if: ${{ github.event.head_commit.message != 'push content' }}
       env:
@@ -28,11 +25,11 @@ jobs:
         npm install
         npm run fetch
         npm run build
+        echo "============================================================="
+        echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
         cd adui-icon
         npm publish --access public
         ls
-        echo "============================================================="
-        echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
