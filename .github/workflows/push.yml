@@ -11,7 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-
+    - uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
     - uses: actions/setup-node@v1
       with:
         node-version: '10.x'
@@ -21,7 +23,6 @@ jobs:
         FIGMA_FILE_URL: ${{ secrets.FIGMA_FILE_URL }}
         FIGMA_TOKEN: ${{ secrets.FIGMA_TOKEN }}
         ADUI_ID: ${{secrets.ADUI_ID}}
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       run: |
         npm install
         npm run fetch
@@ -36,6 +37,8 @@ jobs:
         git add .
         git commit -m 'push content'
         git push origin master
+    - name: npm publish
+      if: ${{ github.event.head_commit.message != 'push content' }}
       # run: |
       #       cd adui-icon
       #       npm publish --access public
