@@ -1,7 +1,7 @@
 
   export interface IIconNames {
       "add-circle-dotlined": string;
-  "add-circle-outline": string;
+  "add-circle-outlined": string;
   "add-circle": string;
   "add-group": string;
   "add-person": string;
@@ -9,6 +9,7 @@
   "adjust": string;
   "alert-circle-outlined": string;
   "alert-circle": string;
+  "alert": string;
   "app-outlined": string;
   "app": string;
   "arrow-back": string;
@@ -34,8 +35,8 @@
   "bulb": string;
   "button-outlined": string;
   "button": string;
+  "cake-outlined": string;
   "cake": string;
-  "cakeoutlined": string;
   "calculator-outlined": string;
   "calculator": string;
   "calendar-outlined": string;
@@ -50,8 +51,10 @@
   "catering-outlined": string;
   "catering": string;
   "certificate-outlined": string;
+  "channels": string;
   "chat-bubble-outlined": string;
   "chat-bubble": string;
+  "circle-optimize-target": string;
   "city-outlined": string;
   "city": string;
   "code-sand-box": string;
@@ -102,19 +105,24 @@
   "game": string;
   "gender": string;
   "happy": string;
+  "headline": string;
   "heart-outlined": string;
   "heart": string;
   "help-circle-outlined": string;
   "help-circle": string;
+  "help": string;
   "histogram-outlined": string;
   "histogram-square": string;
   "histogram": string;
-  "iPhoneX-outlined": string;
+  "home-outlined": string;
+  "home": string;
+  "iPhone-outlined": string;
   "image-outlined": string;
   "image": string;
   "import": string;
   "info-circle-outlined": string;
   "info-circle": string;
+  "info": string;
   "key-outlined": string;
   "key": string;
   "law": string;
@@ -134,7 +142,11 @@
   "makeup-outlined": string;
   "makeup": string;
   "male": string;
+  "man-outlinad": string;
+  "man": string;
   "map-outlined": string;
+  "material-image": string;
+  "material-layer": string;
   "maternal-baby-outlined": string;
   "maternal-baby": string;
   "medical-outlined": string;
@@ -151,6 +163,7 @@
   "mobile": string;
   "more-horiz": string;
   "more-vert": string;
+  "multi-select": string;
   "music": string;
   "node-tree-2-outlined": string;
   "node-tree-outlined": string;
@@ -173,9 +186,11 @@
   "radar-outlined": string;
   "receipt-outlined": string;
   "receipt": string;
+  "redenvelope-outlined": string;
   "refresh-circle-cancel": string;
   "refresh-circle": string;
   "refresh": string;
+  "refund-outlined": string;
   "replace": string;
   "replay": string;
   "report-outlined": string;
@@ -200,6 +215,7 @@
   "speaker-outlined": string;
   "speaker": string;
   "sport-outlined": string;
+  "stacked-bar-chart-square": string;
   "star-outlined": string;
   "star": string;
   "storage-outlined": string;
@@ -240,10 +256,21 @@
   "wallet-outlined": string;
   "wallet": string;
   "warning-circle-outlined": string;
-  "warning-circle": string;
+  "warning": string;
   "watch-outlined": string;
   "website-outlined": string;
   "website": string;
+  "wish-outlined": string;
+  "wish": string;
+  "woman-outlined": string;
+  "woman": string;
   "zoom-in": string;
   "zoom-out": string;
+  "推广数据": string;
+  "新增关注": string;
+  "新增播放量": string;
+  "新增点赞": string;
+  "朋友圈 copy": string;
+  "朋友圈": string;
+  "视频号": string;
   }
