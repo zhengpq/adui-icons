@@ -1,6 +1,6 @@
 {
   "name": "adui-icon",
-  "version": "1.8.4",
+  "version": "1.8.5",
   "description": "A package for storing adui svg icon data",
   "main": "index.js",
   "scripts": {
