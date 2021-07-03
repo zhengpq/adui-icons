@@ -25,6 +25,8 @@ jobs:
         npm install
         npm run fetch
         npm run build
+        cd adui-icon
+        npm publish --access public
         ls
         echo "${{ github.event.head_commit.message }} ${{ secrets.AUTHOR }} ${{ secrets.REPO }} ${{ secrets.MAIL }}======================================"
         echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
