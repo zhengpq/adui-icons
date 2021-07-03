@@ -30,7 +30,7 @@ jobs:
         cd adui-icon
         npm publish --access public
         ls
-        echo "${{ github.event.head_commit.message }} ${{ secrets.AUTHOR }} ${{ secrets.REPO }} ${{ secrets.MAIL }}======================================"
+        echo "============================================================="
         echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
         git config user.name github-actions
         git config user.email github-actions@github.com
