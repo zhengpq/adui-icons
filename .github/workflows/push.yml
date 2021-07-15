@@ -45,16 +45,17 @@ jobs:
       #   git add .
       #   git commit -m 'push content'
       #   git push origin master
-    # - name: Pushes to another repository
-    #   uses: cpina/github-action-push-to-another-repository@main
-    #   env:
-    #     API_TOKEN_GITHUB: ${{ secrets.GH_TOKEN }}
-    #   with:
-    #     source-directory: './adui-icon'
-    #     destination-github-username: ${{ secrets.AUTHOR }}
-    #     destination-repository-name: ${{ secrets.REPO }}
-    #     user-email: ${{ secrets.MAIL }}
-    #     target-branch: 'main'
+    - name: Pushes to another repository
+      if: ${{ github.event.head_commit.message != 'push content' }}
+      uses: cpina/github-action-push-to-another-repository@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.GH_TOKEN }}
+      with:
+        source-directory: './adui-icon'
+        destination-github-username: ${{ secrets.AUTHOR }}
+        destination-repository-name: ${{ secrets.REPO }}
+        user-email: ${{ secrets.MAIL }}
+        target-branch: 'main'
 #     - run: ls
 #     - run: npm publish --access public
 #       env:
