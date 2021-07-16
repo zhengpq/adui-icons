@@ -20,10 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
     "gulp-babel": "^8.0.0",
-    "standard-version": "^7.1.0",
     "classnames": "^2.2.6",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
