@@ -95,6 +95,7 @@
   "filtered": string;
   "finance-outlined": string;
   "finance": string;
+  "first-heading": string;
   "first-hearing": string;
   "fix-outlined": string;
   "fix": string;
@@ -212,6 +213,7 @@
   "screen-arrow-left-bottom": string;
   "screen-arrow-right-top": string;
   "search": string;
+  "secondary-heading": string;
   "secondary-hearing": string;
   "send-outlined": string;
   "send": string;
@@ -233,6 +235,7 @@
   "store-outlined": string;
   "tag-outlined": string;
   "tag": string;
+  "tertiary-heading": string;
   "tertiary-hearing": string;
   "text": string;
   "tick-circle-outlined": string;
