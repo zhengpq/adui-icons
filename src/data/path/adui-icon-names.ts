@@ -32,8 +32,10 @@
   "book": string;
   "bookmark-outlined": string;
   "bookmark": string;
+  "branch": string;
   "bulb-outlined": string;
   "bulb": string;
+  "bullet": string;
   "button-outlined": string;
   "button": string;
   "cake-outlined": string;
@@ -60,6 +62,7 @@
   "city": string;
   "code-sand-box": string;
   "code": string;
+  "comment": string;
   "compass-outlined": string;
   "computer": string;
   "copy-outlined": string;
@@ -92,6 +95,7 @@
   "filtered": string;
   "finance-outlined": string;
   "finance": string;
+  "first-hearing": string;
   "fix-outlined": string;
   "fix": string;
   "folder-outlined": string;
@@ -140,6 +144,7 @@
   "lock": string;
   "mail-outlined": string;
   "mail": string;
+  "main-body": string;
   "makeup-outlined": string;
   "makeup": string;
   "male": string;
@@ -148,6 +153,7 @@
   "map-outlined": string;
   "material-image": string;
   "material-layer": string;
+  "material": string;
   "maternal-baby-outlined": string;
   "maternal-baby": string;
   "medical-outlined": string;
@@ -169,6 +175,7 @@
   "node-tree-2-outlined": string;
   "node-tree-outlined": string;
   "order": string;
+  "overstriking": string;
   "pause-circle-outlined": string;
   "pause-circle": string;
   "pause": string;
@@ -205,11 +212,13 @@
   "screen-arrow-left-bottom": string;
   "screen-arrow-right-top": string;
   "search": string;
+  "secondary-hearing": string;
   "send-outlined": string;
   "send": string;
   "setting-outlined": string;
   "setting": string;
   "share": string;
+  "sheet": string;
   "shopping-cancel-outlined": string;
   "shopping-outlined": string;
   "shopping": string;
@@ -224,6 +233,7 @@
   "store-outlined": string;
   "tag-outlined": string;
   "tag": string;
+  "tertiary-hearing": string;
   "text": string;
   "tick-circle-outlined": string;
   "tick-circle": string;
