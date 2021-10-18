@@ -8,7 +8,7 @@ require('dotenv').config()
 const FIGMA_TOKEN = '137867-237b6948-8462-4510-be5b-bee09a85c7cc'
 // const FIGMA_FILE_URL = 'https://www.figma.com/file/PFuQDWtYvTBqy4wSz7tzTB/AD-UI-%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80?node-id=40%3A5'
 const FIGMA_FILE_URL = 'https://www.figma.com/file/Sf7hJMvx2zhLwfapHiXMLB/AD-UI-%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80?node-id=40%3A5'
-const ADUI_ID = '44:124'
+const ADUI_ID = '2242:224'
 
 const options = {
   format: 'svg',
