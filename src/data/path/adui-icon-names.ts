@@ -1,6 +1,7 @@
 
   export interface IIconNames {
-      "add-circle-dotlined-test": string;
+      "Percentage": string;
+  "add-circle-dotlined-test": string;
   "add-circle-dotlined": string;
   "add-circle-outlined": string;
   "add-circle": string;
@@ -123,6 +124,7 @@
   "histogram": string;
   "home-outlined": string;
   "home": string;
+  "hotzone": string;
   "iPhone-outlined": string;
   "image-outlined": string;
   "image": string;
@@ -178,6 +180,7 @@
   "music": string;
   "node-tree-2-outlined": string;
   "node-tree-outlined": string;
+  "number": string;
   "offiaccount": string;
   "order": string;
   "overstriking": string;
