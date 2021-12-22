@@ -112,6 +112,7 @@
   "game-outlined": string;
   "game": string;
   "gender": string;
+  "happy-outline": string;
   "happy": string;
   "headline": string;
   "heart-outlined": string;
@@ -140,6 +141,7 @@
   "line-chart-square": string;
   "line-chart": string;
   "list": string;
+  "live": string;
   "location-outlined": string;
   "location": string;
   "lock-open-outlined": string;
@@ -268,6 +270,8 @@
   "triangle-left": string;
   "triangle-right": string;
   "triangle-up": string;
+  "unhappy-outline": string;
+  "unhappy": string;
   "up": string;
   "upload": string;
   "video-cam-outlined": string;
