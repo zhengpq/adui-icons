@@ -113,6 +113,7 @@
   "game": string;
   "gender": string;
   "happy-outline": string;
+  "happy-outlined": string;
   "happy": string;
   "headline": string;
   "heart-outlined": string;
@@ -271,6 +272,7 @@
   "triangle-right": string;
   "triangle-up": string;
   "unhappy-outline": string;
+  "unhappy-outlined": string;
   "unhappy": string;
   "up": string;
   "upload": string;
