@@ -61,6 +61,7 @@
   "circle-optimize-target": string;
   "city-outlined": string;
   "city": string;
+  "clothes-outlined": string;
   "clue": string;
   "code-sand-box": string;
   "code": string;
@@ -76,6 +77,7 @@
   "diamond-outlined": string;
   "dish-outlined": string;
   "dish": string;
+  "division": string;
   "down": string;
   "download": string;
   "draggable": string;
@@ -86,6 +88,7 @@
   "education-outlined": string;
   "education": string;
   "exit-full-screen": string;
+  "familyactivities-outlined": string;
   "female": string;
   "figure-ring-square": string;
   "figure-ring": string;
@@ -136,6 +139,7 @@
   "info": string;
   "key-outlined": string;
   "key": string;
+  "ktv": string;
   "law": string;
   "left": string;
   "line-chart-outlined": string;
@@ -158,6 +162,7 @@
   "man-outlinad": string;
   "man": string;
   "map-outlined": string;
+  "market-outlined": string;
   "material-image": string;
   "material-layer": string;
   "material": string;
@@ -192,6 +197,7 @@
   "pause": string;
   "people-outlined": string;
   "people": string;
+  "percentage": string;
   "person": string;
   "phone-outlined": string;
   "phone": string;
@@ -245,6 +251,7 @@
   "store-outlined": string;
   "tag-outlined": string;
   "tag": string;
+  "task": string;
   "tertiary-heading": string;
   "tertiary-hearing": string;
   "text": string;
