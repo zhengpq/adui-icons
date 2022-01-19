@@ -88,6 +88,7 @@
   "education-outlined": string;
   "education": string;
   "exit-full-screen": string;
+  "family-activities-outlined": string;
   "familyactivities-outlined": string;
   "female": string;
   "figure-ring-square": string;
@@ -212,6 +213,7 @@
   "receipt-outlined": string;
   "receipt": string;
   "redenvelope-outlined": string;
+  "redo": string;
   "refresh-circle-cancel": string;
   "refresh-circle": string;
   "refresh": string;
@@ -278,6 +280,7 @@
   "triangle-left": string;
   "triangle-right": string;
   "triangle-up": string;
+  "undo": string;
   "unhappy-outline": string;
   "unhappy-outlined": string;
   "unhappy": string;
