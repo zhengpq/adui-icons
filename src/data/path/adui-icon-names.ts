@@ -131,6 +131,7 @@
   "histogram": string;
   "home-outlined": string;
   "home": string;
+  "hot-zone": string;
   "hotzone": string;
   "iPhone-outlined": string;
   "image-outlined": string;
@@ -253,6 +254,7 @@
   "storage-outlined": string;
   "store-cancel-outlined": string;
   "store-outlined": string;
+  "stretch": string;
   "tag-outlined": string;
   "tag": string;
   "task": string;
