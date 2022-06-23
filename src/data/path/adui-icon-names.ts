@@ -112,6 +112,7 @@
   "format-align-left": string;
   "format-align-right": string;
   "full-screen": string;
+  "funnel-chart": string;
   "furniture-outlined": string;
   "game-outlined": string;
   "game": string;
@@ -150,6 +151,7 @@
   "line-chart": string;
   "link": string;
   "list": string;
+  "live-outlined": string;
   "live": string;
   "location-outlined": string;
   "location": string;
@@ -290,6 +292,8 @@
   "unhappy": string;
   "up": string;
   "upload": string;
+  "verify-outline": string;
+  "verify": string;
   "video-cam-outlined": string;
   "video-cam": string;
   "view-outlined": string;
